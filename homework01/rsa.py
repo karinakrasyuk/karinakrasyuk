@@ -46,9 +46,9 @@ def multiplicative_inverse(e: int, phi: int) -> int:
     >>> multiplicative_inverse(7, 40)
     23
     """
-    d = 1  # если будет ноль,то остаток не будет получаться единицей
+    d = 1  
     while (d * e) % phi != 1:
-        d += 1  # будем прибалять единицу, пока остаток не станет единицей
+        d += 1  
     return d
 
 
